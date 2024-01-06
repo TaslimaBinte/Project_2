@@ -1,0 +1,183 @@
+/* ========================= */
+/* Base Styles */
+/* ========================= */
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 4rem;
+  }
+  
+  main {
+    min-height: 800px;
+  }
+  
+  figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  /* ========================= */
+  /* Layout */
+  /* ========================= */
+  .layout-grid{
+    grid-gap: 20px;
+  }
+  .page-left {
+    grid-column: 1 / 8;
+  }
+  
+  .page-right {
+    grid-column: 8 / -1;
+    text-align: right;
+  }
+  
+  /* ========================= */
+  /* Card Related */
+  /* ========================= */
+  .card-grid {
+    grid-gap: 5px;
+  }
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #8888;
+    border-radius: 0.5rem;
+  }
+  
+  .card img {
+    transition: transform 0.2s;
+  }
+  
+  .card:hover img {
+    transform: scale(1.2);
+  }
+  
+  .card-btn {
+    border: none;
+    border-radius: 3rem;
+  
+    /* https://cssgradient.io/ */
+    background: #21B573;
+    
+    background: linear-gradient(
+      180deg,
+      rgba(181, 89, 255, 0.6579424005930496) 20%,
+      rgba(90, 0, 255, 1) 100%
+    );
+  
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    transition: background 2s, transform 0.3s;
+  }
+  
+  .card-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .card-btn:active {
+    background: linear-gradient(
+      180deg,
+      rgba(90, 0, 255, 1) 20%,
+      rgba(181, 89, 255, 0.6579424005930496) 100%
+    );
+    transform: translateY(-5px) scale(1);
+  }
+  
+  .grid-item {
+    grid-column: auto / span 4;
+  }
+  
+  /* ========================= */
+  /* Cart */
+  /* ========================= */
+  
+  .cart-item{
+    border: 1px solid #8888;
+    border-radius: 0.5rem;
+  }
+  
+  .cart-img{
+    max-width: 100px;
+  }
+  
+  .cart-figure{
+    display: initial;
+    text-align: center;
+  }
+  
+  .cart-total-btn{
+    background: #21B573;
+    background: linear-gradient(
+      180deg,
+      rgba(181, 89, 255, 0.6579424005930496) 20%,
+      rgba(90, 0, 255, 1) 100%
+    );
+    border-radius: 0 0 0.5rem 0.5rem;
+    color:#fff;
+  }
+
+  
+  /* ========================= */
+  /* Utility Classes */
+  /* ========================= */
+  .grid {
+    display: grid;
+    /* Declaring 12-column grid system */
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .p-1 {
+    padding: 1rem;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  .text-center {
+    text-align: center;
+  }
+  
+  .w-100{
+    width: 100%;
+  }
+  
+  .w-50{
+    width: 50%;
+  }
+  
+  .flex-between {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .p-0{
+    padding: 0;
+  }
+  
+  .m-0{
+    margin: 0;
+  }
+  
+  .pb-0{
+    padding-bottom: 0;
+  }
+  
+  .mb-0{
+    margin-bottom: 0;
+  }
+  
+  .pe-1{
+    padding-inline-end: 0.75rem;
+  }
